@@ -31,12 +31,10 @@ public class TimeInterval {
         if (this.converterIntoSecond() > ((TimeInterval) o).converterIntoSecond()) {
             System.out.println("If result is \"1\" it's mean that object One more than object Two");
             return 1;
-        }
-        else if (this.converterIntoSecond() < ((TimeInterval) o).converterIntoSecond()) {
+        } else if (this.converterIntoSecond() < ((TimeInterval) o).converterIntoSecond()) {
             System.out.println("If result is \"-1\" it's mean that object One less than object Two");
-            return -1 ;
-        }
-        else {
+            return -1;
+        } else {
             System.out.println("If result is \"0\" it's mean that object One equals to object Two");
             return 0;
         }
@@ -51,17 +49,16 @@ public class TimeInterval {
     }
 
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return 31 + this.hour + this.minute + this.second;
     }
 
     @Override
     public String toString() {
-        return "This is a object of " + this.getClass().getSimpleName() + " class;" +"\n" +
+        return "This is a object of " + this.getClass().getSimpleName() + " class;" + "\n" +
                 "It's consist of :" + "\n"
-                + "hour = " + hour + " minute = " + minute  + " second = " + second;
+                + "hour = " + hour + " minute = " + minute + " second = " + second;
     }
-
 
     @Override
     public void finalize() {
