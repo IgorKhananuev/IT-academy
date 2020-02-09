@@ -4,9 +4,9 @@ public class Task21 {
     public static void main(String[] args) {
         // Method 1 -  Concatenation of strings
         long startTime1 = System.currentTimeMillis();
-        String  line = "";
+        StringBuilder line = new StringBuilder();
         for (int i = 0; i <= 50; i++){
-            line += "*";
+            line.append("*");
         }
         long timeSpent1 = System.currentTimeMillis() - startTime1;
         System.out.println("Method 1 -  Concatenation of strings");
