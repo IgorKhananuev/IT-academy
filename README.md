@@ -1,2 +1,1 @@
-# IT-academy
 Igor Khananuev
